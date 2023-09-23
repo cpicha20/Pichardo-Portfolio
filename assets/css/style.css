@@ -35,6 +35,7 @@ h1{
 
 nav{
 margin-right: 50px;
+contet-x
 
 }
 
@@ -78,7 +79,7 @@ main{
 display: flex;
 flex-direction: column;
 background-color: var(--lightgrey);
-height: 900px;
+height: auto;
 }
 
 .content{
@@ -94,6 +95,7 @@ height: 900px;
     align-items: center;
 }
 
+/* content heading */
 h2{
     text-align: end;
     width: 20%;
@@ -121,6 +123,5 @@ h2{
 }
 
 
-
-
 /* ---------------------------------------------------------- */
+
