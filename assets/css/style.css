@@ -39,7 +39,7 @@ contet-x
 
 }
 
-a{
+nav a{
     font-size: 30px;
     text-decoration: none;
     font-weight: 200;
@@ -86,8 +86,9 @@ height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 30px;
+    margin: 30px 0px;
     width: 100%;
+    
 
 }
 
@@ -95,8 +96,22 @@ height: auto;
     align-items: center;
 }
 
-/* content heading */
-h2{
+.column-direction{
+    flex-direction: column;
+}
+
+.row-direction{
+    flex-direction: row;
+}
+
+.space-between{
+
+justify-content: space-between;
+
+}
+
+/* lefthand content heading */
+.leftside{
     text-align: end;
     width: 20%;
     height: 200px;
@@ -107,12 +122,14 @@ h2{
 
 }
 
+/* righthand actual content */
 .rightside{
-    
-    align-content: center;
+    display: flex;
+
     padding: 10px 40px;
-    width: 70%;
+    width: 75%;
     border-left: 4px solid var(--blue);
+    flex-wrap: wrap;
     
    
 }
@@ -124,4 +141,26 @@ h2{
 
 
 /* ---------------------------------------------------------- */
+
+.mainpic {
+    background-image: url(../images/view-blue-wood-texture.jpg);
+    background-size:auto;
+    height: 600px;
+    width: 100%;
+    border: 8px solid var(--lightblue);
+    margin-bottom: 1%;
+
+    
+    
+}
+
+ 
+.sidepic {
+    background-image: url(../images/view-blue-wood-texture.jpg);
+    background-size: auto;
+    height: 300px;
+    width: 49%;
+    border: 8px solid var(--lightblue);
+    margin: 1% 0;
+}
 
