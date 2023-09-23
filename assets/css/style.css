@@ -7,8 +7,12 @@
 
 *{
 font-family: Arial, Helvetica, sans-serif;
+color: #31343D;
+
+
 }
 
+/* Start of header------------------------------------------- */
 header{
 display: flex;
 flex-wrap: wrap;
@@ -43,7 +47,9 @@ a{
     border-bottom: 4px solid #92CCCD;
     margin-right: 5px;
 }
+/* ---------------------------------------------------------- */
 
+/* Banner Picture--------------------------------------------- */
 figure{
     position: relative;
     height: 300px;
@@ -57,6 +63,7 @@ figure{
     position: absolute;
     font-size: 40px;
     font-weight: bold;
+    line-height: 1;
 
     right:90px;
     bottom: 20px;
@@ -64,3 +71,56 @@ figure{
     color:var(--darkgrey);
     padding: 7px;
 }
+/* ---------------------------------------------------------- */
+
+/* Start of main content------------------------------------- */
+main{
+display: flex;
+flex-direction: column;
+background-color: var(--lightgrey);
+height: 900px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 30px;
+    width: 100%;
+
+}
+
+.align-center{
+    align-items: center;
+}
+
+h2{
+    text-align: end;
+    width: 20%;
+    height: 200px;
+     align-self:flex-start;
+    padding: 30px 20px;
+    font-size: 45px;
+    color: var(--blue);
+
+}
+
+.rightside{
+    
+    align-content: center;
+    padding: 10px 40px;
+    width: 70%;
+    border-left: 4px solid var(--blue);
+    
+   
+}
+
+.mystory{
+    font-size:medium ;
+    line-height: 1.5;
+}
+
+
+
+
+/* ---------------------------------------------------------- */
