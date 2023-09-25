@@ -120,9 +120,8 @@ justify-content: space-between;
 /* lefthand content heading */
 .leftside{
     text-align: end;
-    width: 20%;
-  
-     align-self:flex-start;
+    flex: 0 0 20%;
+    align-self:flex-start;
     padding: 30px 20px;
     font-size: 45px;
     color: var(--blue);
@@ -132,9 +131,8 @@ justify-content: space-between;
 /* righthand actual content */
 .rightside{
     display: flex;
-
     padding: 10px 40px;
-    width: 75%;
+    flex: 0 0 77%;
     border-left: 4px solid var(--blue);
     flex-wrap: wrap;
     
@@ -147,23 +145,11 @@ justify-content: space-between;
 }
 
 
+                                 
 
-
-.mainpic {
-    background-image: url(../images/view-blue-wood-texture.jpg);
-    background-size:cover;
-    height: 600px;
-    width: 100%;
-    border: 8px solid var(--lightblue);
-    margin-bottom: 1%;
-    position: relative;
-
-    
-    
-}
 
  
-.sidepic {
+.projectpic {
     background-image: url(../images/view-blue-wood-texture.jpg);
     background-size: cover;
     height: 200px;
@@ -171,8 +157,27 @@ justify-content: space-between;
     border: 8px solid var(--lightblue);
     margin: 1% 0;
     position: relative;
+    background-color: var(--blue);
+    background-blend-mode:soft-light;
+    transition: all 0.5s;
+    
 
 }
+
+.projectpic:first-child{
+    height: 400px;
+    flex-basis: 100%;
+}
+
+.projectpic:hover {
+    background-color: rgba(0, 0, 0, 0)
+  }
+  
+
+.mainpic:hover {
+    background-color: rgba(0, 0, 0, 0)
+  }
+  
 
 h3{
     font-size: 25px;
@@ -182,7 +187,6 @@ h3{
 
 .piclabel{
     position: absolute;
-   
     left: 0px;
     bottom: 18px;
     background-color: var(--lightblue);
@@ -191,11 +195,8 @@ h3{
 }
 /* ---------------------------------------------------------- */
 
-/* Start of Footer------------------------------------------- */
+/* Start of Footer------------------------------------------- */    
 
-
-
-    
 .contact a{
     font-size: 20px;
     text-decoration: none;
@@ -205,3 +206,5 @@ h3{
     border-bottom: 4px solid var(--blue);
     margin-right: 5px;
 }
+
+/* -------------------------------------------------------- */
