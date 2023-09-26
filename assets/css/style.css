@@ -99,7 +99,7 @@ figure {
   position: relative;
   height: 300px;
   width: 100%;
-  background-image: url("../images/view-blue-wood-texture.jpg");
+  background-image: url("../images/castillo-de-Tossa-de-Mar.jpg");
   background-size: cover;
 }
 
@@ -168,8 +168,6 @@ main {
 }
 
 .projectpic {
-  background-image: url(../images/view-blue-wood-texture.jpg);
-  background-size: cover;
   height: 200px;
   width: 49%;
   border: 8px solid var(--lightblue);
@@ -179,6 +177,30 @@ main {
   background-blend-mode: soft-light;
   transition: all 0.5s;
 }
+ /* Picture elements on the page */
+#horiseon{
+  background-image: url(../images/Preview.png);
+  background-size: cover;
+}
+
+#prework{
+  background-image: url(../images/prework.png);
+  background-size: cover;
+}
+
+#comingSoon1{
+  background-image: url(../images/coming-soon-design-template-9cdcd177c85de52a33df465d5102a8d6_screen.jpg);
+  background-size:contain;
+}
+#comingSoon2{
+  background-image: url(../images/25516.jpg);
+  background-size: contain;
+}
+#comingSoon3{
+  background-image: url(../images/360_F_99828865_lW5dIHE9e4NCI8Lb5XaY4wL5CL32hiAI.jpg);
+  background-size: contain;
+}
+
 
 .projectpic:first-child {
   height: 400px;
