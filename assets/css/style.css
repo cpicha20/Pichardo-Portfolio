@@ -1,273 +1,255 @@
-:root{
---lightgrey: #EDEDF6;
---lightblue:#92CCCD ;
---blue:#445876 ;
---darkgrey:#31343D;
+:root {
+  --lightgrey: #ededf6;
+  --lightblue: #92cccd;
+  --blue: #445876;
+  --darkgrey: #31343d;
 }
 
-*{
-font-family: Arial, Helvetica, sans-serif;
-color: #31343D;
-
-
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #31343d;
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--lightgrey);
+body {
+  background-color: var(--lightgrey);
 }
 
-.align-center{
-    align-items: center;
+.align-center {
+  align-items: center;
 }
 
-.column-direction{
-    flex-direction: column;
+.column-direction {
+  flex-direction: column;
 }
 
-.row-direction{
-    flex-direction: row;
+.row-direction {
+  flex-direction: row;
 }
 
-.space-between{
-
-justify-content: space-between;
-
+.space-between {
+  justify-content: space-between;
 }
 /* Start of header------------------------------------------- */
-header{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color:var(--darkgrey) ;
-    padding: 10px 0px;   
+header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--darkgrey);
+  padding: 10px 0px;
 }
 
 /* Pichardo name on the top left of the page */
-h1{
-    font-size: 60px;
-    background-color: var(--lightblue);
-    color: var(--darkgrey);
-    padding: 6px;
-    padding-left: 60px;  
+h1 {
+  font-size: 60px;
+  background-color: var(--lightblue);
+  color: var(--darkgrey);
+  padding: 6px;
+  padding-left: 60px;
 }
 
-nav{
-    margin-right: 50px;
+nav {
+  margin-right: 50px;
 }
 
-nav a{
-    position: relative;
-    font-size: 30px;
-    text-decoration: none;
-    font-weight: 200;
-    color: var(--lightblue);
-    padding: 4px 10px;
-    border-bottom: 4px solid #92CCCD;
-    margin-right: 5px;
-    z-index: 2;
+nav a {
+  position: relative;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 200;
+  color: var(--lightblue);
+  padding: 4px 10px;
+  border-bottom: 4px solid #92cccd;
+  margin-right: 5px;
+  z-index: 2;
 }
 
-nav span{
-    position: relative;
-    z-index: 2;
-    color: #92CCCD;
-    transition: all 0.5s;
+nav span {
+  position: relative;
+  z-index: 2;
+  color: #92cccd;
+  transition: all 0.5s;
 }
 
 nav a::before {
-    position: absolute;
-    background-color: var(--lightblue);
-    content: "";
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 0%;
-    width: 100%;
-    transition: all 0.5s;
-   
+  position: absolute;
+  background-color: var(--lightblue);
+  content: "";
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  transition: all 0.5s;
 }
 
-nav a:hover::before{
-    height: 100%;
+nav a:hover::before {
+  height: 100%;
 }
 
-nav a:hover  span{
-color: var(--darkgrey);
+nav a:hover span {
+  color: var(--darkgrey);
 }
 /* ---------------------------------------------------------- */
 
 /* Banner Picture--------------------------------------------- */
-figure{
-    position: relative;
-    height: 300px;
-    width: 100%;
-    background-image: url("../images/view-blue-wood-texture.jpg");
-    background-size:cover;
-
+figure {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background-image: url("../images/view-blue-wood-texture.jpg");
+  background-size: cover;
 }
 
-.subtitle{
-    position: absolute;
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 1;
+.subtitle {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
 
-    right:90px;
-    bottom: 20px;
-    background-color: var(--lightblue);
-    color:var(--darkgrey);
-    padding: 7px;
+  right: 90px;
+  bottom: 20px;
+  background-color: var(--lightblue);
+  color: var(--darkgrey);
+  padding: 7px;
 }
 /* ---------------------------------------------------------- */
 
 /* Start of main content------------------------------------- */
-main{
-    display: flex;
-    flex-direction: column;
-    height: auto;
+main {
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 30px 0px;
-    width: 100%;
-
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 30px 0px;
+  width: 100%;
 }
 
-.content span{
-    color: #445876;
-    display: block;
+.content span {
+  color: #445876;
+  display: block;
 }
 
-
-
-.space-even{
-    justify-content: space-evenly;
+.space-even {
+  justify-content: space-evenly;
 }
 
 /* lefthand content heading */
-.leftside{
-    text-align: end;
-    flex: 0 0 20%;
-    align-self:flex-start;
-    padding: 30px 20px;
-    font-size: 45px;
-    color: var(--blue);
-    flex-shrink: 1;
-    
-
+.leftside {
+  text-align: end;
+  flex: 0 0 20%;
+  align-self: flex-start;
+  padding: 30px 20px;
+  font-size: 45px;
+  color: var(--blue);
+  flex-shrink: 1;
 }
 
 /* righthand actual content */
-.rightside{
-    display: flex;
-    padding: 10px 40px;
-    flex: 0 0 77%;
-    border-left: 4px solid var(--blue);
-    flex-wrap: wrap;
-    padding-right: 0px;
-    
-   
+.rightside {
+  display: flex;
+  padding: 10px 40px;
+  flex: 0 0 77%;
+  border-left: 4px solid var(--blue);
+  flex-wrap: wrap;
+  padding-right: 0px;
 }
 
-.mystory{
-    font-size:medium ;
-    line-height: 1.5;
+.mystory {
+  font-size: medium;
+  line-height: 1.5;
 }
 
-                                
 .projectpic {
-    background-image: url(../images/view-blue-wood-texture.jpg);
-    background-size: cover;
-    height: 200px;
-    width: 49%;
-    border: 8px solid var(--lightblue);
-    margin: 1% 0;
-    position: relative;
-    background-color: var(--blue);
-    background-blend-mode:soft-light;
-    transition: all 0.5s;
+  background-image: url(../images/view-blue-wood-texture.jpg);
+  background-size: cover;
+  height: 200px;
+  width: 49%;
+  border: 8px solid var(--lightblue);
+  margin: 1% 0;
+  position: relative;
+  background-color: var(--blue);
+  background-blend-mode: soft-light;
+  transition: all 0.5s;
 }
 
-.projectpic:first-child{
-    height: 400px;
-    flex-basis: 100%;
+.projectpic:first-child {
+  height: 400px;
+  flex-basis: 100%;
 }
 
 .projectpic:hover {
-    background-color: rgba(0, 0, 0, 0.3)
-}
-  
-
-h3{
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.piclabel{
-    position: absolute;
-    left: 0px;
-    bottom: 18px;
-    background-color: var(--lightblue);
-    color:var(--darkgrey);
-    padding: 1%;
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.piclabel {
+  position: absolute;
+  left: 0px;
+  bottom: 18px;
+  background-color: var(--lightblue);
+  color: var(--darkgrey);
+  padding: 1%;
 }
 /* ---------------------------------------------------------- */
 
-/* Start of Footer------------------------------------------- */    
+/* Start of Footer------------------------------------------- */
 
-.contact a{
-    position: relative;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 200;
-    padding: 4px 7px;
-    border-bottom: 4px solid var(--blue);
-    margin-right: 5px;
+.contact a {
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 200;
+  padding: 4px 7px;
+  border-bottom: 4px solid var(--blue);
+  margin-right: 5px;
 }
 
-
-.contact span{
-    position: relative;
-    z-index: 2;
-    transition: all 0.5s;
+.contact span {
+  position: relative;
+  transition: all 0.5s;
 }
 
-.contact span:hover{
-    transition: ALL 0.5S;
-    color: var(--lightgrey);
+.contact span:hover {
+  transition: ALL 0.5s;
+  color: var(--lightgrey);
 }
 
 .contact a::before {
-    position: absolute;
-    background-color: var(--blue);
-    content: "";
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 0%;
-    width: 100%;
-    transition: all 0.5s;
+  position: absolute;
+  background-color: var(--blue);
+  content: "";
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  transition: all 0.5s;
 }
 
-.contact a:hover::before{
-    height: 100%;
-   
+.contact a:hover::before {
+  height: 100%;
 }
 
-.contact a:hover span{
-    color: #EDEDF6;
-   
+.contact a:hover span {
+  color: #ededf6;
 }
-/* -------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
 
 @media screen and (max-width: 992px) {
-  Header{
+  Header {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -276,76 +258,71 @@ h3{
     padding-bottom: 20px;
   }
 
-  h1{
+  h1 {
     padding-left: 0;
     width: 100%;
     text-align: center;
   }
-  
-  nav{
-   padding-top: 10px;
+
+  nav {
+    padding-top: 10px;
     margin: 0;
   }
 
-    .content{
+  .content {
     flex-direction: column;
-}
+  }
 
-    .content h2{
+  .content h2 {
     text-align: center;
     align-self: flex-start;
     margin-left: 39px;
-    
+    padding: 12px;
   }
 
-  .content span{
-        color: #445876;
-        display: inline;
-    }
-
-   
-
-    .rightside{
-        margin: 0px 20px;
-        border: 0;
-        display: flex;
-        padding: 10px 40px;
-        flex: 0 0 77%;
-        border-top: 4px solid var(--blue);
-        flex-wrap: wrap;
-        padding-right: 0px;
-        
-        
-       
-    }
-    
-
+  .content span {
+    color: #445876;
+    display: inline;
   }
-  
-  /* Large smartphones - navbar changes color */
-     @media screen and (max-width: 768px) {
-        
-        .projectpic {
-            background-image: url(../images/view-blue-wood-texture.jpg);
-            background-size: cover;
-            height: 200px;
-            width: 100%;
-            border: 8px solid var(--lightblue);
-            margin: 1% 0;
-            position: relative;
-            background-color: var(--blue);
-            background-blend-mode:soft-light;
-            transition: all 0.5s;
-        }
-        
-        .projectpic:first-child{
-            height: 200px;
-        }
 
-        .contact{
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-    
+  .rightside {
+    margin: 0px 20px;
+    border: 0;
+    display: flex;
+    padding: 10px 40px;
+    flex: 0 0 77%;
+    border-top: 4px solid var(--blue);
+    flex-wrap: wrap;
+    padding-right: 0px;
+    margin-top: 5px;
   }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  .projectpic {
+    background-image: url(../images/view-blue-wood-texture.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    border: 8px solid var(--lightblue);
+    margin: 1% 0;
+    position: relative;
+    background-color: var(--blue);
+    background-blend-mode: soft-light;
+    transition: all 0.5s;
+  }
+
+  .projectpic:first-child {
+    height: 200px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact a {
+    margin-top: 15px;
+  }
+}
