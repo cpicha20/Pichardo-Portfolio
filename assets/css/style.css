@@ -15,6 +15,9 @@ body {
   background-color: var(--lightgrey);
 }
 
+.space-even {
+  justify-content: space-evenly;
+}
 .align-center {
   align-items: center;
 }
@@ -73,6 +76,7 @@ nav span {
   transition: all 0.5s;
 }
 
+/* Needed to add hover animations on nav */
 nav a::before {
   position: absolute;
   background-color: var(--lightblue);
@@ -124,6 +128,7 @@ main {
   height: auto;
 }
 
+/* so I can tuck the Me under About in h2 */
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -137,9 +142,7 @@ main {
   display: block;
 }
 
-.space-even {
-  justify-content: space-evenly;
-}
+
 
 /* lefthand content heading */
 .leftside {
@@ -201,12 +204,13 @@ main {
   background-size: contain;
 }
 
-
+/* So I can make the first item in the work flex box bigger */
 .projectpic:first-child {
   height: 400px;
   flex-basis: 100%;
 }
 
+/* add opacity hover effect on project pictures in the work section */
 .projectpic:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -239,6 +243,7 @@ h3 {
   margin-right: 5px;
 }
 
+/* so I can tuck the Me under Contact in h2 */
 .contact span {
   position: relative;
   transition: all 0.5s;
@@ -249,6 +254,7 @@ h3 {
   color: var(--lightgrey);
 }
 
+/* needed for hover animation on contact links */
 .contact a::before {
   position: absolute;
   background-color: var(--blue);

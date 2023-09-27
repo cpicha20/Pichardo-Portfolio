@@ -5,7 +5,7 @@ UCF Coding Bootcamp Week 1 Challange 2.
 This challenge focused on building a portfolio utilizing all the skills I learned withing the first week of the fullstack bootcamp course.
 I plan on adding more and building upon this portfolio site as I progress on my journey as a fullstack developer. 
 
-<a href="https://cpicha20.github.io/pichardo-portfolio/" target="_blank">Visit the site by clicking here</a> 🚀
+<a href="https://cpicha20.github.io/Pichardo-Portfolio/" target="_blank">Visit the site by clicking here</a> 🚀
 
 
 ## Tech Stack
