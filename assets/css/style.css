@@ -193,7 +193,7 @@ main {
 
 #SMG{
   background-image: url(../images/SMG.png);
-  background-size:contain;
+  background-size: cover;
 }
 #comingSoon2{
   background-image: url(../images/25516.jpg);
